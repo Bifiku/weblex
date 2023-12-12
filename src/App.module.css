@@ -1,0 +1,71 @@
+.app {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.ball {
+    position: absolute;
+    z-index: -1;
+}
+
+.ball-1 {
+    background: url("/icons/balls/purple-ball.svg") center/cover no-repeat;
+    width: 60px;
+    height: 60px;
+    top: -45px;
+    left: 63%;
+    filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+    backdrop-filter: blur(2px);
+}
+
+.ball-2 {
+    background: url("/icons/balls/red-ball-1.svg") center/cover no-repeat;
+    width: 83px;
+    height: 83px;
+    top: 25px;
+    left: 35%;
+    border-radius: 83px;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.ball-3 {
+    background: url("/icons/balls/red-ball-1.svg") center/cover no-repeat;
+    width: 28px;
+    height: 28px;
+    top: 420px;
+    left: 60%;
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
+    backdrop-filter: blur(2px);
+}
+
+.ball-4 {
+    width: 311px;
+    height: 311px;
+    border-radius: 311px;
+    opacity: 0.5;
+    background: #961A1A;
+    left: -150px;
+    top: 250px;
+    filter: blur(196px);
+}
+
+.ball-5 {
+    width: 311px;
+    height: 311px;
+    border-radius: 311px;
+    opacity: 0.5;
+    background: #833AB4;
+    left: 520px;
+    top: -180px;
+    filter: blur(196px);
+}
+
+@media screen and (max-width: 320px) {
+    .app {
+        justify-content: start;
+    }
+}

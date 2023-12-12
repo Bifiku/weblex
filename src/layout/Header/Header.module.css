@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.icons {
+    height: min-content;
+    display: flex;
+    gap: 30px;
+}
+
+.icons span {
+    cursor: pointer;
+}
+
+.phone {
+    height: min-content;
+    min-width: max-content;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 140px;
+}
+
+.logo p {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .icons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .logo, .phone, .icons {
+        display: none;
+    }
+    .header {
+        gap: 0;
+        justify-content: space-around;
+        padding: 20px 15px;
+        background: var(--background-color);
+    }
+}

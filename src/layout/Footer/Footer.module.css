@@ -1,0 +1,148 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+}
+
+.footer__content {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 30px;
+}
+
+.company, .menu, .contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu__links, .company__links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px 50px;
+    height: 140px;
+}
+
+.contacts {
+    width: 100%;
+    margin-left: auto;
+    text-align: right;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.footer__author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer__author p {
+    font-family: var(--font-Mont);
+    font-size: 12px;
+}
+
+.footer__author a {
+    font-family: var(--font-Mont);
+    font-size: 12px;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        padding: 40px 15px 60px 15px;
+        background: var(--background-color);
+        height: auto;
+    }
+    .menu__links {
+        height: auto;
+    }
+    .footer__content {
+        gap: normal;
+    }
+    .company {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .footer__content {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .menu {
+        width: auto;
+    }
+    .company, .menu, .contacts, .company__links {
+        height: auto;
+    }
+    .company {
+        margin-right: 0;
+    }
+    .contacts {
+        width: auto;
+        margin-left: 0;
+        text-align: left;
+    }
+    .icons {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 330px) {
+.footer {
+    padding: 40px 15px 60px 15px;
+    background: var(--background-color);
+    height: auto;
+}
+.footer__content {
+    flex: 1;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.company__links {
+    height: auto;
+}
+.menu__links a, .company__links a {
+    font-size: 14px;
+    font-weight: 400;
+}
+.menu__links a {
+    width: 40% !important;
+}
+.menu__links {
+    height: 165px;
+    gap: 10px 30px;
+}
+.contacts {
+    gap: normal;
+    text-align: left;
+}
+.contacts h4 {
+    margin-bottom: 20px;
+}
+.contacts p, .icons {
+    margin-bottom: 10px;
+}
+.footer__author {
+    align-items: flex-start;
+    height: auto;
+}
+.icons {
+    justify-content: flex-start;
+}
+.icons a {
+    font-size: 24px;
+}
+}
